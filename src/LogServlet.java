@@ -41,6 +41,9 @@ public class LogServlet extends HttpServlet {
 
                 HttpSession session = request.getSession(true);
 
+                response.sendRedirect("page/index.html");
+              //  request.getRequestDispatcher("/page/index.html").forward(request,response);
+
             }
             else {
 

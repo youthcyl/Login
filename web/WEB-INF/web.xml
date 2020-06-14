@@ -6,12 +6,21 @@
 
 
     <servlet>
-        <servlet-name>LogServlet</servlet-name>
-        <servlet-class>LogServlet</servlet-class>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>Controller.LoginServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>LogServlet</servlet-name>
+        <servlet-name>LoginServlet</servlet-name>
         <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ShowNewsListServlet</servlet-name>
+        <servlet-class>Controller.ShowNewsListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShowNewsListServlet</servlet-name>
+        <url-pattern>/page/ShowNewsListServlet</url-pattern>
     </servlet-mapping>
 
 <!--    <servlet>-->
